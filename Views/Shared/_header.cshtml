@@ -29,6 +29,8 @@
     bool userIsAdmin = userConnected ? Models.User.ConnectedUser.IsAdmin : false;
     bool userCanWrite = userConnected ? Models.User.ConnectedUser.CanWrite : false;
 
+    Media currentMedia = DAL.DB.Medias.Get(currentMediaId);
+
     string index = RouteConfig.DefaultAction();
 }
 
@@ -137,6 +139,11 @@
                 break;
             case "details":
                 <div id="mainMenuPanel" class="menu">
+                    <div style="display: grid; grid-template-columns:auto 20px; align-items: last baseline; margin-right: 8px">
+                        <span class="cmdIcon" style="font-size: 1.1em" 
+                              title="Usagers qui ont aimé : &#10;@string.Join("\n", currentMedia.Likes)">@currentMedia.Likes.Count</span>
+                        <i class="cmdIcon fa-regular fa-thumbs-up toggleLikeCmd"></i>
+                    </div>
                     @if ((bool)Session["UserCanEditCurrentMedia"] && userCanWrite)
                     {
                         <a href="/@controller/Edit" class="cmdIcon fa fa-pen-to-square" title="Modifier..."></a>

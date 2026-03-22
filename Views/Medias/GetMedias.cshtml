@@ -27,8 +27,14 @@
                 </div>
                 <div style="display: grid; grid-template-columns: auto 120px; align-items: last baseline ">
 
-                    <div style="margin-left: 4px; color: gray; font-size: 0.65em">@media.Category  @Helper.When(media.PublishDate) </div>
+                    <div style="margin-left: 4px; color: gray; font-size: 0.65em">@media.Category  <span style="color: dodgerblue">@Helper.When(media.PublishDate)</span></div>
 
+                    <div style="display: flex; justify-content: flex-end; gap: 5px; align-items: center; padding-right: 4px; cursor: pointer; color: dodgerblue">
+                        <span title="Usagers qui ont commenté : ">0</span>
+                        <i class="cmdIconSmall fa-regular fa-comment" style="color: dodgerblue; margin-left: 2px"></i>
+                        <span title="Usagers qui ont aimé : &#10;@string.Join("\n", media.Likes)">@media.Likes.Count</span>
+                        <i class="cmdIconSmall fa-regular fa-thumbs-up toggleLikeCmd" style="color: dodgerblue; margin-left: 2px"></i>
+                    </div>
                    
                 </div>
             </div>

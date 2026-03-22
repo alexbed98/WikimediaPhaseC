@@ -7,7 +7,7 @@ using System.Web.Routing;
 
 namespace Wikimedia
 {
-    public class RouteConfig // test github
+    public class RouteConfig
     {
         public static string DefaultAction()
         {

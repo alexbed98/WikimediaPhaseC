@@ -11,6 +11,7 @@ namespace Models
 
     public class Media : Record
     {
+        public List<string> Likes { get; set; } = new List<string> { "Heisenberg", "Jimmy McGill" };
         public string Title { get; set; }
         public string Category { get; set; }
         public string Description { get; set; }

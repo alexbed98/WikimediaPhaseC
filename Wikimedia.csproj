@@ -149,7 +149,10 @@
     <Content Include="App_Assets\Users\5aa8957d-e980-4cac-b915-aaa63d0909f1.jpeg" />
     <Content Include="App_Assets\Users\67e02a94-2b82-4d76-8396-9cac4db7308d.png" />
     <Content Include="App_Assets\Users\8b12ca6f-f732-440c-b7db-ccb07e1fdcae.png" />
+    <Content Include="App_Assets\Users\8d05ba19-849e-47b2-9256-0c43db5356a4.png" />
     <Content Include="App_Assets\Users\a85fbd9a-5340-4053-a4c5-c7d491df7afe.jpeg" />
+    <Content Include="App_Assets\Users\c34cc1e5-8e49-4ec4-aa8a-bd74bae0e1c5.png" />
+    <Content Include="App_Assets\Users\da131268-b08a-4d0c-b6c8-0729ddc8b4f0.png" />
     <Content Include="App_Assets\Users\no_avatar.png" />
     <Content Include="App_Data\iso-3166.txt" />
     <Content Include="Content\Accounts.css" />
