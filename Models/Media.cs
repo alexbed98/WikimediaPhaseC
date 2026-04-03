@@ -21,6 +21,7 @@ namespace Models
         public bool Shared { get; set; } = true;
         [JsonIgnore]
         public User Owner => DB.Users.Get(OwnerId).Copy();
+        public int LikeCount => DB.MediaLikes.ToList().Count(like => like.MediaId == this.Id);
 
         public override bool IsValid()
         {

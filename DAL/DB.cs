@@ -17,17 +17,16 @@ namespace DAL
 
         public static MediasRepository Medias { get; set; } = new MediasRepository();
         
-        static public UsersRepository Users { get; set; }
-            = new UsersRepository();
+        static public UsersRepository Users { get; set; } = new UsersRepository();
 
-        static public NotificationsRepository Notifications { get; set; }
+        static public NotificationsRepository Notifications { get; set; } 
             = new NotificationsRepository();
 
-        static public LoginsRepository Logins { get; set; }
-            = new LoginsRepository();
+        static public LoginsRepository Logins { get; set; } = new LoginsRepository();
 
-        static public EventsRepository Events { get; set; }
-            = new EventsRepository();
+        static public EventsRepository Events { get; set; } = new EventsRepository();
+
+        static public MediaLikeRepository MediaLikes { get; set; } = new MediaLikeRepository();
 
         static public Repository<UnverifiedEmail> UnverifiedEmails { get; set; }
             = new Repository<UnverifiedEmail>();
